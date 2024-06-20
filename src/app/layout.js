@@ -11,14 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/marked/13.0.0/marked.min.js"
-          integrity="sha512-NlNyxz9EmQt8NOeczUXqghpfmRIHlCfE5qRKftWYA44tf8sveWGZhSHxVtGtyHlmqdt89f66F26aWi+kTDz8RQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"></script>
-      </head>
-      <body className={inter.className}>{children}</body>
+      <head></head>
+      <body className={inter.className}>
+        {children}
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      </body>
     </html>
   );
 }
