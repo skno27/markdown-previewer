@@ -26,8 +26,37 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#container {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid white;
+  background-color: gray;
+  margin-top: 50px;
+}
+
+.editor {
+  width: 33%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.preview {
+  width: 50%;
+  height: 1200px;
+  margin-bottom: 50px;
+}
+
+.banner {
+  background: rgb(0, 61, 0);
+  border: 1px solid black;
 }
